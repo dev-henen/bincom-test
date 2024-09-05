@@ -1,6 +1,6 @@
 # Configuration Guide
 
-This guide provides a breakdown of the settings available in the `config.ini` file, which is used to configure the application and database settings for your project.
+This guide provides a breakdown of the settings available in the `config.ini` file, which is used to configure the application and database settings for this project.
 
 ## [config] Section
 
