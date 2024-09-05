@@ -1,0 +1,19 @@
+﻿RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
+
+<Files "config.ini">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+
+ErrorDocument 404 /404
+ErrorDocument 500 /error
